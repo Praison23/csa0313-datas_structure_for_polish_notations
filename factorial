@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() /* find the factorial of the given number with reccursion*/
+{
+	int n;
+	printf("enter the number");
+	scanf("%d",&n);
+	printf("\n\nthe factorial of %d is %d\n\n",n,factorial(n));
+	return 0;
+	}
+int factorial(int n)
+{
+	if(n==1)
+	return 1;
+	else
+	return(n*factorial(n-1));
+	
+}
