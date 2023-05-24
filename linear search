@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int A[10],i,n,flag=0,key;
+	printf("enter the count of n");
+	scanf("%d",&n);
+	printf("enter array elemnts");
+	for(i=0;i<n;i++)
+	scanf("%d",&A[i]);
+	printf("enter the key");
+	scanf("%d",&key);
+	flag=0;
+	for(i=0;i<n;i++)
+	{
+		if(A[i]==key)
+		{
+			flag=1;
+			break;
+		}
+	}
+	if(flag==1)
+	printf("\n\nelement is found\n\n");
+	else
+	printf("\n\n not found in the list \n\n");
+	return 0;
+}
